@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institut Teknologi Del</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6262f92ebf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar d-flex justify-content-between align-items-center">
+        <div>
+          <p>info@del.ac.id</p>
+          <p>+62 632 331234</p>
+        </div>
+        <div class="icon d-flex align-items-center">
+          <a href=""><i class="fa-brands fa-x-twitter ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-youtube ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-instagram ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-facebook ps-3"></i></a>
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle py-0 ms-3 d-flex align-items-center"
+            data-bs-toggle="dropdown"
+          >
+            <img src="img/Flag_of_Indonesia.png" alt="" style="width: 20px" />
+            Indonesia
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item active" href="#"
+                ><img
+                  src="img/Flag_of_Indonesia.png"
+                  alt=""
+                  style="width: 20px"
+                />Indonesia</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="img/Flag_of_the_United_Kingdom_(1-2).svg.png"
+                  alt=""
+                  style="width: 20px"
+                />English</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="navigasi">
+        <a href="#home">
+          <img src="img/logo_del.png" alt="Logo" />
+        </a>
+        <a href="#dashboard">Dashboard</a>
+        <a class="nav-link" href="#pengumuman">Pengumuman</a>
+        <a class="nav-link" href="#prodi">Program pendidikan</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#lembaga">Lembaga</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/DSC02166-1024x6811.jpg"
+            alt="Los Angeles"
+            class="d-block"
+            style="width: 100%; height: 700px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/WhatsApp-Image-2023-11-01-at-09.15.26.jpeg"
+            alt="Chicago"
+            class="d-block"
+            style="width: 100%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/Plaza_IT_Del.jpg"
+            alt="New York"
+            class="d-block"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container tentang my-5">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h3>Tentang IT Del</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+            hic aspernatur, esse placeat facilis id a, atque nemo aut possimus
+            iure soluta libero veniam ducimus corrupti eum necessitatibus facere
+            incidunt!
+          </p>
+          <button><b>Selengkapnya -></b></button>
+        </div>
+        <div class="col-md-4">
+          <img src="img/Plaza_IT_Del.jpg" alt="IT Del" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Pengumuman dan Berita -->
+    <div class="container my-5 news">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Pengumuman</h4>
+          <hr style="border: 2px solid #000" />
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/O2A1095-1024x683.jpg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href="">Wisuda 398 Lulusan Institut Teknologi Del</a>
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/O2A1095-1024x683.jpg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href=""
+                    >Pengukuhan 483 Mahasiswa IT Del Angkatan XXIII dan Dies
+                    Natalis ke XXII</a
+                  >
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/WhatsApp-Image-2023-07-04-at-13.41.48.jpeg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href=""
+                    >Job Fair Institut Teknologi Del di Pekan Raya Sumatera
+                    Utara (PRSU) 2023</a
+                  >
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>Berita Terkini</h4>
+          <hr style="border: 2px solid #000" />
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/DSC02166-1024x6811.jpg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href=""
+                    >IT Del Menjadi Tuan Rumah 29th IEEE ICT Conference</a
+                  >
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/DSC01879-1024x681.jpg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href=""
+                    >Sosialisasi Data Diri untuk PDDikti dan Peraturan Kampus
+                    kepada Mahsiswa Angkatan 2023</a
+                  >
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/WhatsApp-Image-2023-11-01-at-09.15.26.jpeg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href=""
+                    >399 Mahasiswa IT Del Mengikuti Retreat untuk Meningkatkan
+                    Karakter 3M (MarTuhan, Marroha, Marbisuk)</a
+                  >
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img
+                    src="img/DSC_0019-1024x681.jpg"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <a href=""
+                    >Rapat Koordinasi Keluarga Mahasiswa Organisasi IT Del
+                    Periode 2023/2024</a
+                  >
+                  <p>
+                    Pada hari sabtu 23 September 2023, Institut Teknologi Del
+                    melaksanakan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main my-5">
+      <div class="row">
+        <div class="col-sm-5 border">
+          <h4>Pendaftaran</h4>
+        </div>
+        <div class="col-sm-5 border">
+          <h4>Beasiswa</h4>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="logo">
+          <img src="img/Institut Teknologi Del.png" alt="" />
+        </div>
+        <div class="contact">
+          <h5>Contact Us</h5>
+          <p>Telp: +62 632 331234</p>
+          <p>Fax: +62 632 331116</p>
+          <p>Website: http://www.del.ac.id</p>
+          <p>Email: info@del.ac.id</p>
+          <p>Karir: karir@del.ac.id</p>
+        </div>
+        <div class="alamat">
+          <h5>Alamat</h5>
+          <p>
+            Institut Teknologi Del Jl. Sisingamangaraja, <br />
+            Sitoluama Laguboti, <br />
+            Toba Samosir Sumatera Utara, Indonesia
+          </p>
+          <p>Kode Pos: 22381</p>
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <h5>
+          Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights
+          Reserved
+        </h5>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.bg-biru {
+  background-color: #0078c4;
+}
+
+.top-bar {
+  background-color: #47156c;
+  overflow: hidden;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.top-bar p {
+  float: left;
+  color: #ffff;
+  padding: 10px 20px 0px 0px;
+}
+
+.icon {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon a:hover {
+  color: #0078c4;
+}
+
+.navigasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0078c4;
+  overflow: visible;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.navigasi a {
+  float: left;
+  color: #ffff;
+  text-align: center;
+  text-decoration: none;
+  padding: auto;
+}
+
+.navigasi a:hover {
+  color: rgb(237, 237, 237);
+}
+
+.navigasi img {
+  height: 70px;
+  width: auto;
+}
+
+#responsive-carousel img {
+  max-width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.tentang {
+  align-items: center;
+}
+
+.fasilitas button,
+.tentang button {
+  background-color: #0078c4;
+  color: #ffff;
+}
+
+.fasilitas button:hover,
+.facilities button:hover,
+.tentang button:hover {
+  color: black;
+}
+
+.news p {
+  font-size: small;
+}
+
+.news a {
+  color: #0078c4;
+  text-decoration: none;
+  font-size: small;
+  line-height: 1;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}
+.news img {
+  margin-bottom: 10px;
+  width: 105px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .news .row {
+    flex-direction: column;
+  }
+
+  .news .col-sm-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .news .row [class*="col-sm-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.facilities .carousel-item button {
+  background-color: #0078c4;
+  color: #ffff;
+}
+
+.facilities .carousel-item button:hover {
+  background-color: #0078c4;
+  color: black;
+}
+
+.facilities .carousel-item {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.full-width-image {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.announcement-text {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(169, 169, 169, 0.7);
+  padding: 10px;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.remah {
+  font-size: 20px;
+}
+
+.pengumuman a {
+  color: #0078c4;
+  text-decoration: none;
+  line-height: 1;
+}
+.pengumuman p {
+  font-size: small;
+}
+
+.pengumuman a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .pengumuman .row {
+    flex-direction: column;
+  }
+
+  .pengumuman .col-sm-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pengumuman .row [class*="col-sm-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.prodi .kotak-prodi {
+  background-color: #0078c4;
+}
+
+.prodi .kotak-prodi h5:hover {
+  background-color: #0078c4;
+  color: black;
+}
+
+.prodi img {
+  width: 100%;
+  height: 150px;
+}
+
+.fasilitas img {
+  width: auto;
+  height: 120px;
+}
+
+.fasilitas button {
+  margin-bottom: 50px;
+}
+
+.fasilitas p {
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #47156c;
+  overflow: hidden;
+  color: #ffff;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer img {
+  display: block;
+  height: 150px;
+  width: auto;
+}
+
+.footer .contact {
+  display: block;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0078c4;
+  overflow: hidden;
+  color: #ffff;
+}
+
+.btn-drop {
+  position: relative;
+  margin-right: 20px;
+}
+
+.link-drop {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #0078c4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  flex-direction: column;
+}
+
+.btn-drop:hover .navbar-dropdown {
+  display: flex;
+}
+
+.dropdown-link {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.mitra .collapse a {
+  color: #0078c4;
+  text-decoration: none;
+}
+
+.mitra a:hover {
+  color: black;
+}

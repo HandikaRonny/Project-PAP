@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institut Teknologi Del</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6262f92ebf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar d-flex justify-content-between align-items-center">
+        <div>
+          <p>info@del.ac.id</p>
+          <p>+62 632 331234</p>
+        </div>
+        <div class="icon d-flex align-items-center">
+          <a href=""><i class="fa-brands fa-x-twitter ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-youtube ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-instagram ps-3"></i></a>
+          <a href=""><i class="fa-brands fa-facebook ps-3"></i></a>
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle py-0 ms-3 d-flex align-items-center"
+            data-bs-toggle="dropdown"
+          >
+            <img src="img/Flag_of_Indonesia.png" alt="" style="width: 20px" />
+            Indonesia
+          </button>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item active" href="#"
+                ><img
+                  src="img/Flag_of_Indonesia.png"
+                  alt=""
+                  style="width: 20px"
+                />Indonesia</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="img/Flag_of_the_United_Kingdom_(1-2).svg.png"
+                  alt=""
+                  style="width: 20px"
+                />English</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navigasi sticky-top">
+      <a href="index.html">
+        <img src="img/logo_del.png" alt="Logo" />
+      </a>
+      <div class="btn-drop">
+        <a href="index.html" class="link-drop">Dashboard</a>
+        <div class="navbar-dropdown small">
+          <a href="#" class="dropdown-link">Sejarah Del</a>
+          <a href="#" class="dropdown-link">Sambutan Ketua Yayasan</a>
+          <a href="#" class="dropdown-link">Sambutan Rektor</a>
+          <a href="#" class="dropdown-link">Senat Akademik</a>
+        </div>
+      </div>
+      <a href="pengumuman.html"><b>Pengumuman</b></a>
+      <div class="btn-drop">
+        <a href="prodi.html" class="link-drop">Program Pendidikan</a>
+        <div class="navbar-dropdown small">
+          <a href="#" class="dropdown-link"
+            >Fakultas Informatika & Teknik Elektro</a
+          >
+          <a href="#" class="dropdown-link">Fakultas Vokasi</a>
+          <a href="#" class="dropdown-link">Fakultas Bioteknologi</a>
+          <a href="#" class="dropdown-link">Fakultas Teknologi Industri</a>
+        </div>
+      </div>
+      <div class="btn-drop">
+        <a href="fasilitas.html" class="link-drop">Fasilitas</a>
+        <div class="navbar-dropdown small">
+          <a href="#" class="dropdown-link">Laboratorium & Kelas</a>
+          <a href="#" class="dropdown-link">Akomodasi</a>
+          <a href="#" class="dropdown-link">Kantin</a>
+          <a href="#" class="dropdown-link">Perpustakaan</a>
+          <a href="#" class="dropdown-link">Hiburan & Olahraga</a>
+          <a href="#" class="dropdown-link">Ruang Terbuka</a>
+          <a href="#" class="dropdown-link">Klinik</a>
+        </div>
+      </div>
+      <a href="lembaga.html">Lembaga</a>
+      <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    </nav>
+    <!-- End Navbar-->
+
+    <!-- Img -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="full-width-image">
+            <img
+              src="img/WhatsApp-Image-2023-11-24-at-09.00.36.jpeg"
+              alt="Full Width Image"
+            />
+            <div class="announcement-text">Berita & Pengumuman</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Img -->
+
+    <!-- Breadcrumb -->
+    <div class="container mt-4 remah">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pengumuman</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Pengumuman dan Berita -->
+    <div class="container my-5 pengumuman">
+      <h4>Pengumuman</h4>
+      <hr style="border: 2px solid #000" />
+      <div class="row">
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/O2A1095-1024x683.jpg" alt="" style="width: 200px" />
+            </div>
+            <div class="col-sm-8">
+              <a href="">Wisuda 398 Lulusan Institut Teknologi Del</a>
+              <p>
+                Pada Hari Sabtu 23 September 2023, Institut Teknologi Del
+                melaksanakan Wisuda untuk 398 Mahasiswa Sarjana dan Diploma.
+                Turut hadir Bapak Dr. Honoris Causa Ir. Airlangga Hartarto, MBA,
+                MMT (Menteri Koordinator Bidang Perekonomian Republik
+                Indonesia), Bapak Rionald Silaban (Direktorat Jendral Kekayaan
+                Negara), Bapak Jend. TNI (Purn.) Luhut Binsar Pandjaitan, M.P.A
+                (Ketua Pembina Yayasan Del) ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/O2A1095-1024x683.jpg" alt="" style="width: 200px" />
+            </div>
+            <div class="col-sm-8">
+              <a href=""
+                >Pengukuhan 483 Mahasiswa IT Del Angkatan XXIII dan Dies Natalis
+                ke XXII</a
+              >
+              <p>
+                Sitoluama, 22 September 2023 Institut Teknologi Del
+                menyelenggarakan Acara Pengukuhan Mahasiswa Baru Angkatan XXIII
+                dan Dies Natalis ke XXII. Kegiatan ini dihadiri oleh Ketua
+                Pembina Yayasan Del, Bapak Luhut Binsar Pandjaitan dan Ibu Devi
+                Pandjaitan, Ketua Pengurus Yayasan Del, Ibu Intan Simanjuntak,
+                Rektor IT Del Bapak Dr. Arnaldo Marulitua ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="img/WhatsApp-Image-2023-07-04-at-13.41.48.jpeg"
+                alt=""
+                style="width: 200px"
+              />
+            </div>
+            <div class="col-sm-8">
+              <a href=""
+                >Job Fair Institut Teknologi Del di Pekan Raya Sumatera Utara
+                (PRSU) 2023</a
+              >
+              <p>
+                Horas Warga Sumatera Utara!!! Dinas Ketenagakerjaan Provinsi
+                Sumatera Utara kini bekerja sama dengan beberapa perusahaan dan
+                institut yang menyediakan lowongan pekerjaan. Salah satunya
+                adalah Institut Teknologi Del. Melalui acara JOB FAIR 2023 ini
+                akan menjadi kesempatan baik untuk Anda bertemu dengan kami dari
+                Institut Teknologi Del yang menyediakan berbagai peluang kerja.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-1"></div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container my-5 pengumuman">
+      <h4>Berita Terkini</h4>
+      <hr style="border: 2px solid #000" />
+      <div class="row">
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="img/DSC02166-1024x6811.jpg"
+                alt=""
+                style="width: 200px"
+              />
+            </div>
+            <div class="col-sm-8">
+              <a href="">IT Del Menjadi Tuan Rumah 29th IEEE ICT Conference</a>
+              <p>
+                Institut Teknologi Del berperan sebagai host dalam International
+                Conference on Telecommunications (ICT) untuk edisi yang ke-29.
+                ICT merupakan konferensi yang berfokus pada kemajuan dan
+                penelitian terkini dalam bidang telekomunikasi. Konferensi ini
+                berlangsung pada tanggal 8-9 November 2023 berlokasi di Toba,
+                Indonesia. Sedikitnya terdapat 40 paper dari peneliti-peneliti
+                yang berasal dari 6 negara ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="img/DSC01879-1024x681.jpg"
+                alt=""
+                style="width: 200px"
+              />
+            </div>
+            <div class="col-sm-8">
+              <a href=""
+                >Sosialisasi Data Diri untuk PDDikti dan Peraturan Kampus kepada
+                Mahsiswa Angkatan 2023</a
+              >
+              <p>
+                Pada hari Kamis, 2 November 2023 Institut Teknologi Del
+                mengadakan sosialisasi yang penting dan informatif, yang
+                bertujuan untuk memberikan pemahaman mendalam kepada mahasiswa
+                angkatan 2023 tentang Pangkalan Data Pendidikan Tinggi, Standar
+                Operasional ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="img/WhatsApp-Image-2023-11-01-at-09.15.26.jpeg"
+                alt=""
+                style="width: 200px"
+              />
+            </div>
+            <div class="col-sm-8">
+              <a href=""
+                >399 Mahasiswa IT Del Mengikuti Retreat untuk Meningkatkan
+                Karakter 3M (MarTuhan, Marroha, Marbisuk)</a
+              >
+              <p>
+                Sebagai bentuk untuk meningkatkan karakter Del yakni 3M
+                (MarTuhan, Marroha, Marbisuk) mahasiswa IT Del angkatan 2021
+                sebanyak 399 orang melaksanakan retreat dan outbond. Kegiatan
+                ini dilaksanakan dengan 2 gelombang yakni Gelombang I pada
+                tanggal 29-30 ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 py-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="img/DSC_0019-1024x681.jpg"
+                alt=""
+                style="width: 200px"
+              />
+            </div>
+            <div class="col-sm-8">
+              <a href=""
+                >Rapat Koordinasi Keluarga Mahasiswa Organisasi IT Del Periode
+                2023/2024</a
+              >
+              <p>
+                Pada Hari Jumat, 27 Oktober 2023 diadakan Rapat Koordinasi KM-IT
+                Del Periode 2023/2024 yang dihadiri oleh Bapak Dr. Arnaldo
+                Marulitua Sinaga, ST., M.InfoTech. (Rektor IT Del), Ibu Mariana
+                Simanjuntak, S.S., M.Sc (Direktur Pendidikan IT Del), juga Bapak
+                dan Ibu Unit Kemahasiswaan. Rapat koordinasi ini dilakukan
+                dengan tujuan ...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer pt-3">
+        <div class="logo">
+          <img src="img/Institut Teknologi Del.png" alt="" />
+        </div>
+        <div class="contact">
+          <h5>Contact Us</h5>
+          <p>
+            Telp: +62 632 331234 <br />
+            Fax: +62 632 331116 <br />
+            Website: http://www.del.ac.id <br />
+            Email: info@del.ac.id <br />
+            Karir: karir@del.ac.id
+          </p>
+        </div>
+        <div class="alamat">
+          <h5>Alamat</h5>
+          <p>
+            Institut Teknologi Del Jl. Sisingamangaraja, <br />
+            Sitoluama Laguboti, <br />
+            Toba Samosir Sumatera Utara, Indonesia <br />
+            Kode Pos: 22381
+          </p>
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright SDI-IT Del © 2023 Institut Teknologi Del. All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

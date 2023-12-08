@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Fasilitas - Admin</title>
+
+    <!-- Custom fonts for this template -->
+    <script
+      src="https://kit.fontawesome.com/6262f92ebf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this page -->
+    <link
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav sidebar-adm sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="admin_dashboard.html"
+        >
+          <div class="sidebar-brand-icon">
+            <img src="img/Institut Teknologi Del.png" alt="" width="50px" />
+          </div>
+          <div class="sidebar-brand-text">Institut Teknologi Del</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="admin_dashboard.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link" href="admin_pengumuman.html">
+            <i class="fas fa-fw fa-bullhorn"></i>
+            <span>Pengumuman</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link" href="admin_prodi.html">
+            <i class="fas fa-fw fa-graduation-cap"></i>
+            <span>Program pendidikan</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item active">
+          <a class="nav-link" href="admin_fasilitas.html">
+            <i class="fas fa-fw fa-school"></i>
+            <span>Fasilitas</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link" href="admin_lembaga.html">
+            <i class="fas fa-fw fa-globe"></i>
+            <span>Lembaga</span></a
+          >
+        </li>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Search for..."
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div
+                  class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                  aria-labelledby="searchDropdown"
+                >
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 small"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Nama Admin</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="img/undraw_profile.svg"
+                  />
+                </a>
+
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profil
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Pengaturan
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Log Aktivitas
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Keluar
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center mb-4">
+              <h1 class="h3 mb-0 text-gray-800">Fasilitas</h1>
+            </div>
+
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary float-left">
+                  Manajemen Fasilitas
+                </h6>
+                <button type="button" class="btn btn-success float-right">
+                  + Tambah Fasilitas
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered"
+                    id="dataTable"
+                    width="100%"
+                    cellspacing="0"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="">Gambar</th>
+                        <th>Judul</th>
+                        <th>Keterangan</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="">
+                          <img
+                            src="img/MG_9520-y-copy-715x300.jpg"
+                            alt=""
+                            width="200px"
+                          />
+                        </td>
+                        <td>Laboratorium & Kelas</td>
+                        <td>
+                          Laboratorium Komputer di IT Del menyediakan 8 ruangan,
+                          termasuk 3 untuk tingkat 3 dan 4 untuk Laptop Room,
+                          memungkinkan mahasiswa akses internet dan koneksi LAN.
+                          Laboratorium Bahasa berfungsi sebagai ruang rapat, DEC
+                          (Del English Club), dan tempat sidang proyek,
+                          dilengkapi dengan PC, headphone, infokus, meja, dan
+                          kursi. Kesadaran akan keamanan peralatan dan
+                          kontribusi pada suasana akademik yang berhasil
+                          diharapkan dari pengguna. Laboratorium berperan dalam
+                          pengajaran, mandiri mahasiswa, dan pelatihan,
+                          mendukung pendidikan, penelitian, dan pengabdian pada
+                          masyarakat di Institut Teknologi Del.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="">
+                          <img src="img/slide2.jpg" alt="" width="200px" />
+                        </td>
+                        <td>Akomodasi</td>
+                        <td>
+                          Institut Teknologi Del (IT Del) menyediakan akomodasi
+                          dosen dengan berbagai tipe, seperti Rumah Dosen,
+                          Mansionette, Town House, dan Studio, sesuai kebutuhan
+                          keluarga atau status perkawinan. Mahasiswa diwajibkan
+                          tinggal di asrama kampus untuk mendukung sistem
+                          pendidikan vokasi dengan pengawasan dan peraturan yang
+                          menjamin disiplin dan kualitas hidup. Asrama mahasiswa
+                          terbagi menjadi beberapa bangunan dengan fasilitas
+                          lengkap, terpisah antara perempuan dan laki-laki. IT
+                          Del juga menyediakan Guest House sebanyak 6 unit,
+                          dengan pemandangan Danau Toba, untuk tamu akademis dan
+                          non-akademis guna memberikan kenyamanan.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="">
+                          <img
+                            src="img/DSC_1253-copy-715x300.jpg"
+                            alt=""
+                            width="200px"
+                          />
+                        </td>
+                        <td>Kantin</td>
+                        <td>
+                          Kantin Politeknik Informatika Del menawarkan menu
+                          bergizi untuk mahasiswa, memastikan standar gizi
+                          terpenuhi. Mahasiswa wajib makan di kantin tiga kali
+                          sehari. Jadwal makan selama minggu perkuliahan
+                          mencakup Senin, Selasa, Kamis, Rabu, dan Jumat, dengan
+                          etika makan yang mencakup pakaian rapi, tata cara
+                          makan baik, dan sopan santun. Sabtu dan Minggu,
+                          layanan kantin dihentikan, memungkinkan mahasiswa
+                          keluar kampus. IT Del Shop juga menyediakan kebutuhan
+                          mahasiswa dengan harga terjangkau, termasuk alat
+                          tulis, perawatan pribadi, asesoris, dan makanan
+                          ringan, dengan jam operasional yang nyaman.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="">
+                          <img src="img/DSC_0072.jpg" alt="" width="200px" />
+                        </td>
+                        <td>Perpustakaan</td>
+                        <td>
+                          Perpustakaan IT Del, sejak didirikan pada 9 Januari
+                          2002, telah menjadi pusat informasi unggulan dengan
+                          pelayanan open access. Berganti nama seiring status
+                          Politeknik menjadi Institut pada 2013, perpustakaan
+                          fokus pada fungsi pendidikan dengan pengadaan koleksi
+                          dan pengembangan minat baca. Memiliki visi sebagai
+                          pusat informasi terkemuka, Perpustakaan IT Del
+                          menawarkan layanan cetak dan digital yang mencakup
+                          transaksi buku, referensi, jurnal, dan layanan
+                          teknologi tinggi. Dilengkapi dengan fasilitas seperti
+                          SIPP (Sistem Informasi Perpustakaan IT Del) dan
+                          koleksi digital, perpustakaan juga memperoleh
+                          penghargaan sebagai yang terbaik di Sumatera Utara
+                          pada tahun 2012 dan 2019.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="">
+                          <img src="img/DSC_0147.jpg" alt="" width="200px" />
+                        </td>
+                        <td>Hiburan dan Olahraga</td>
+                        <td>
+                          IT Del tidak hanya menawarkan fasilitas untuk
+                          keperluan belajar mengajar, tetapi juga menyediakan
+                          sarana hiburan dan olahraga untuk menghilangkan
+                          kejenuhan dari rutinitas harian. Fasilitas olahraga
+                          melibatkan berbagai kegiatan seperti bola basket,
+                          futsal, bola voli, badminton, tenis meja, dan jogging.
+                          Sementara itu, sarana hiburan mencakup meja bilyard,
+                          televisi di Entrance Hall dan kantin, serta alat musik
+                          seperti drum, gitar, organ, keyboard, dan gondang.
+                          Dosen, staf, dan mahasiswa IT Del juga
+                          menyelenggarakan berbagai acara hiburan seperti
+                          pertandingan olahraga, nonton bareng, retreat rohani,
+                          dan jalan-jalan bersama.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="">
+                          <img
+                            src="img/PicsArt_12-21-06.08.40.jpg"
+                            alt=""
+                            width="200px"
+                          />
+                        </td>
+                        <td>Ruang Terbuka</td>
+                        <td>
+                          Institut Teknologi Del (IT Del) memberikan konsep
+                          lingkungan kampus yang berbeda dari bayangan kampus di
+                          negara maju. Dengan luas sekitar 12 hektar dan 60%
+                          ruang terbuka hijau, IT Del menjadikan kampusnya
+                          sebagai Ruang Terbuka Hijau (RTH). Area seperti Open
+                          Theater (OT), Asrama, dan Entrance Hall (EH) sering
+                          digunakan oleh mahasiswa untuk kegiatan kelompok,
+                          belajar individu, dan bersantai. Pemandangan Danau
+                          Toba yang meluas di belakang kampus menambah daya
+                          tarik. Dengan pendekatan ini, IT Del mengintegrasikan
+                          fungsi pendidikan dan keindahan alam dalam lingkungan
+                          kampusnya.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="">
+                          <img src="img/DSC_0125.jpg" alt="" width="200px" />
+                        </td>
+                        <td>Klinik</td>
+                        <td>
+                          Praktek Umum Dokter Del didirikan pada Mei 2009 di
+                          sebelah pintu masuk kampus Institut Teknologi Del.
+                          Fokusnya adalah memberikan pelayanan kesehatan kepada
+                          siswa, mahasiswa, dan pegawai Del, serta masyarakat
+                          sekitar. Sebagai praktek sosial non-profit, tetapi
+                          tetap berupaya menjaga mutu pelayanan sesuai standar
+                          terkini. Kolaborasi dengan Jamsostek memungkinkan
+                          pelayanan kepada pasien tanggungan Jamsostek. Praktek
+                          ini menyediakan pengobatan dasar hingga tindakan bedah
+                          sederhana dengan obat yang tersedia di tempat. Saat
+                          ini, praktek umum ini sedang mengembangkan diri
+                          menjadi klinik Yayasan Del, dengan dokter-dokter
+                          seperti dr. Eva C. Saragih dan dr. Johanes Pardede.
+                          Pelayanan tersedia Senin-Jumat dari pukul 16.30 hingga
+                          19.30.
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-warning">
+                            <i class="fas fa-pen"></i> Edit
+                          </button>
+                          <button type="button" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span
+                >Copyright SDI-IT Del &copy; 2023 Institut Teknologi Del. All
+                Rights Reserved</span
+              >
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+  </body>
+</html>
